@@ -12,10 +12,6 @@ html, body {
     box-sizing: inherit;
 }
 
-.normal {
-    color: black;
-}
-
 .header {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -94,13 +90,31 @@ article p {
     width: 45%;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-height: 400px;
+    width: auto;
+}
+
 aside {
     position: fixed;
     top: 0;
     right: 0;
     width: 10%;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 aside ul, aside ol {
