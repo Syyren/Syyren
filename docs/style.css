@@ -16,11 +16,6 @@ html, body {
     color: black;
 }
 
-.big {
-    color: rgb(0, 0, 0);
-    background-size: contain;
-}
-
 .header {
     color: rgb(0, 0, 0);
     text-align: center;
