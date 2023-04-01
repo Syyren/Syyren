@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     margin-right: 7%;
+    margin-left: 7%;
     padding: 0;
     box-sizing: border-box;
 }
@@ -77,7 +78,7 @@ ol {
 body{
     background: rgb(2,0,36);
     background: cornsilk;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alkatra', cursive;
     text-align: center;
 }
 
@@ -88,14 +89,13 @@ article img {
     vertical-align: top;
     margin-right: 20px;
     height: auto;
-    border: 2px solid rgb(129, 127, 113);
     box-sizing: border-box;
     border-radius: 100px;
-    box-shadow: 10px 10px rgb(129, 127, 113);
 }
   
 article p {
     display: inline-block;
+    text-align: left;
     width: 45%;
 }
 
@@ -119,6 +119,10 @@ aside a {
     padding: 10px;
     text-decoration: none;
     color: #333;
+}
+
+input[name="searchbar"] {
+    max-width: 90%;
 }
 
 form {
@@ -157,7 +161,7 @@ input[name="email"] {
 button[type="submit"] {
     padding: 5px 10px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: rgb(102, 101, 90);
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -165,5 +169,5 @@ button[type="submit"] {
 }
   
 button[type="submit"]:hover {
-    background-color: #006603;
+    background-color: rgb(70, 69, 61);
 }
