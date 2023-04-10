@@ -1,76 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@100&display=swap');
 
-html, body {
-    margin: 0;
-    margin-right: 7%;
-    margin-left: 7%;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
 
-*, *:before, *:after{
-    box-sizing: inherit;
+body {
+    font-family: 'Alkatra', cursive;
+    padding: 10px;
+    background: cornsilk;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.centeredtext {
+    text-align: center;
 }
 
 .header {
-    color: rgb(0, 0, 0);
+    padding: 30px;
     text-align: center;
-    font-family: 'Alkatra', cursive;
-    position: sticky;
 }
 
-.navList {
-    font-family: 'Alkatra', cursive;
-    color: white;
-    text-decoration: none;
+.header h1 {
+    font-size: 50px;
 }
-
-a:hover{
-    text-decoration: none;
-    color: rgba(255,218,0,1);
-}
-
-nav {
-    height: 50px;
+  
+.topnav {
+    overflow: hidden;
     background-color: black;
-    display: flex;
-    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+    text-align: center;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.artimg {
+    max-width: 40vh;
+    max-height: auto;
     border-radius: 10px;
 }
 
-nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
-nav li {
-    padding: 0;
-    display: inline-block;
-    text-align: center;
-    flex: 1;
-    border-radius: 10px;
-
-}
-
-ol {
-    display: inline-block;
-    text-align: center;
-}
-
-.gif img {
-    height: auto;
-    max-width: 20%;
-    border: 5px solid rgb(129, 127, 113);
-    border-radius: 400px;
-}
-
-body{
-    background: rgb(2,0,36);
-    background: cornsilk;
-    font-family: 'Alkatra', cursive;
-    text-align: center;
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 article img {
@@ -108,30 +135,9 @@ article p {
     width: auto;
 }
 
-aside {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10%;
-    height: 100%;
-    overflow: auto;
-}
-
-aside ul, aside ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-aside a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-input[name="searchbar"] {
-    max-width: 90%;
+footer {
+    flex-shrink: 0;
+    text-align: center;
 }
 
 form {
@@ -179,4 +185,18 @@ button[type="submit"] {
   
 button[type="submit"]:hover {
     background-color: rgb(70, 69, 61);
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
 }
