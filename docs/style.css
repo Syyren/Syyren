@@ -187,7 +187,7 @@ button[type="submit"]:hover {
     background-color: rgb(70, 69, 61);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
