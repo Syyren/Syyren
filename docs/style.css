@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.currentpage {
+    color: red;
+}
+
 body {
     font-family: 'Alkatra', cursive;
     padding: 10px;
@@ -48,7 +52,7 @@ ul {
 .header h1 {
     font-size: 50px;
 }
-  
+
 .topnav {
     overflow: hidden;
     background-color: black;
@@ -133,7 +137,6 @@ article img {
 article p {
     display: inline-block;
     text-align: left;
-    width: 45%;
 }
 
 .row {
