@@ -7,9 +7,10 @@
 body {
     font-family: 'Alkatra', cursive;
     padding: 10px;
-    background: cornsilk;
+    background: rgb(37, 37, 37);
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 main {
@@ -18,7 +19,20 @@ main {
 
 ul {
     list-style-type: none;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.warning {
+    font-size: 400%;
+    color: red;
+    animation: warn 1s linear infinite;
+}
+
+@keyframes warn {
+    50% {
+      opacity: 0;
+    }
 }
 
 .centeredtext {
@@ -28,6 +42,7 @@ ul {
 .header {
     padding: 30px;
     text-align: center;
+    text-shadow: 2px 2px 5px red;
 }
 
 .header h1 {
@@ -88,10 +103,14 @@ ul {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
+}
+
+.card h1 {
+    text-shadow: 2px 2px 5px red;
 }
 
 .row::after {
