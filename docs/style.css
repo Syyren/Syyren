@@ -87,6 +87,7 @@ a.currentpage {
     overflow: hidden;
     background-color: black;
     border-radius: 20px;
+
 }
 
 .topnav a {
@@ -111,7 +112,8 @@ a.currentpage {
     position: fixed;
     top: 0;
     width: 100%;
-}
+    z-index: 100;
+  }
   
 .sticky + .content {
     padding-top: 60px;
@@ -250,12 +252,5 @@ button[type="submit"]:hover {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
     }
 }
