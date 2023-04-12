@@ -19,15 +19,10 @@ a.arrowpage {
 
 body {
     font-family: 'Alkatra', cursive;
-    padding: 10px;
     background: rgb(37, 37, 37);
     display: flex;
     flex-direction: column;
     color: white;
-}
-
-main {
-    flex: 0 0 auto;
 }
 
 ul {
@@ -110,7 +105,6 @@ a.currentpage {
 .sticky {
     position: fixed;
     top: 0;
-    width: 98.1%;
     z-index: 100;
 }
   
@@ -260,8 +254,14 @@ button[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .topnav a {
         font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .topnav a {
+        font-size: 40%;
     }
 }
