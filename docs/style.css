@@ -104,6 +104,7 @@ a.currentpage {
   
 .sticky {
     position: fixed;
+    width: 100%;
     top: 0;
     z-index: 100;
 }
@@ -262,6 +263,6 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 350px) {
     .topnav a {
-        font-size: 40%;
+        font-size: 30%;
     }
 }
