@@ -105,14 +105,14 @@ a.currentpage {
 
 .content {
     padding: 16px;
-  }
+}
   
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-  }
+}
   
 .sticky + .content {
     padding-top: 60px;
@@ -251,5 +251,11 @@ button[type="submit"]:hover {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        font-size: 80%;
     }
 }
