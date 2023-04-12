@@ -256,6 +256,6 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 600px) {
     .topnav a {
-        font-size: 80%;
+        font-size: 70%;
     }
 }
