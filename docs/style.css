@@ -27,7 +27,7 @@ body {
 }
 
 main {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 ul {
@@ -87,7 +87,6 @@ a.currentpage {
     overflow: hidden;
     background-color: black;
     border-radius: 20px;
-
 }
 
 .topnav a {
