@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
-.currentpage {
-    color: red;
+a.arrowpage {
+    text-decoration: none
+}
+
+.pagenav {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 body {
@@ -51,6 +60,27 @@ ul {
 
 .header h1 {
     font-size: 50px;
+}
+
+a:link {
+    color: red;
+}
+  
+a:visited {
+    color: maroon;
+}
+  
+a:hover {
+    color: white;
+}
+  
+a:active {
+    color: green;
+}
+
+a.currentpage {
+    color: white;
+    text-decoration: none
 }
 
 .topnav {
@@ -111,6 +141,7 @@ ul {
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .card h1 {
